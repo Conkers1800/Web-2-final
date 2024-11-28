@@ -1,0 +1,44 @@
+/* Estilo para el footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Gris oscuro */
+    padding: 15px 30px;
+    color: rgb(255, 254, 254);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra hacia arriba */
+    position: fixed;
+    bottom: 0;
+    width: 94.5%;
+    z-index: 1000; /* Asegura que el footer esté sobre otros elementos */
+}
+
+.footer .welcome-message p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer .nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el contenido central del footer */
+.footer .nav-links {
+    display: flex;
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+}
+
+/* Para asegurar que el contenido principal no quede tapado por el footer fijo */
+body {
+    padding-bottom: 50px; /* Deja espacio para el footer */
+}
